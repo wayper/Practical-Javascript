@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practical Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <!-- https://github.com/wayper/animate.css -->
+            <h1 class="text-center animated tada">ANIMATE.CSS</h1>
+            <img src="src/camel.png" alt="Camel" class="camel animated jello infinite delay-2s">
+
+            <h2 class="text-center">Slider</h2>
+            <button>Push</button>
+            <div class="slider-box">
+                <img src="src/cat.png" alt="img 1">
+                <img src="src/monkey.png" alt="img 2">
+                <img src="src/dog.png" alt="img 3">
+                <img src="src/wolf.png" alt="img 4">
+            </div>
+            <div class="instruction">
+                <div>ДОКУМЕНТАЦИЯ по animate.css - <a href="https://github.com/wayper/animate.css" target="_blank">https://github.com/wayper/animate.css</a></div>
+                <ul>
+                    <li>Добавить анимацию к элементу: <b>animated</b></li>
+                    <li>Непрерывно анимировать: <b>infinite</b></li>
+                    <li>Задержка перед анимацией:
+                        <ul>
+                            <li><b>delay-1s</b></li>
+                            <li><b>delay-2s</b></li>
+                            <li><b>delay-3s</b></li>
+                            <li><b>delay-4s</b></li>
+                            <li><b>delay-5s</b></li>
+                        </ul>
+                    </li>
+                    <li>Таблица с классами для стилизации:
+                        <table class="table-class-name">
+                            <thead>
+                            <tr>
+                            <th>Class Name</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td><code>bounce</code></td>
+                            <td><code>flash</code></td>
+                            <td><code>pulse</code></td>
+                            <td><code>rubberBand</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>shake</code></td>
+                            <td><code>headShake</code></td>
+                            <td><code>swing</code></td>
+                            <td><code>tada</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>wobble</code></td>
+                            <td><code>jello</code></td>
+                            <td><code>bounceIn</code></td>
+                            <td><code>bounceInDown</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>bounceInLeft</code></td>
+                            <td><code>bounceInRight</code></td>
+                            <td><code>bounceInUp</code></td>
+                            <td><code>bounceOut</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>bounceOutDown</code></td>
+                            <td><code>bounceOutLeft</code></td>
+                            <td><code>bounceOutRight</code></td>
+                            <td><code>bounceOutUp</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>fadeIn</code></td>
+                            <td><code>fadeInDown</code></td>
+                            <td><code>fadeInDownBig</code></td>
+                            <td><code>fadeInLeft</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>fadeInLeftBig</code></td>
+                            <td><code>fadeInRight</code></td>
+                            <td><code>fadeInRightBig</code></td>
+                            <td><code>fadeInUp</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>fadeInUpBig</code></td>
+                            <td><code>fadeOut</code></td>
+                            <td><code>fadeOutDown</code></td>
+                            <td><code>fadeOutDownBig</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>fadeOutLeft</code></td>
+                            <td><code>fadeOutLeftBig</code></td>
+                            <td><code>fadeOutRight</code></td>
+                            <td><code>fadeOutRightBig</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>fadeOutUp</code></td>
+                            <td><code>fadeOutUpBig</code></td>
+                            <td><code>flipInX</code></td>
+                            <td><code>flipInY</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>flipOutX</code></td>
+                            <td><code>flipOutY</code></td>
+                            <td><code>lightSpeedIn</code></td>
+                            <td><code>lightSpeedOut</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>rotateIn</code></td>
+                            <td><code>rotateInDownLeft</code></td>
+                            <td><code>rotateInDownRight</code></td>
+                            <td><code>rotateInUpLeft</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>rotateInUpRight</code></td>
+                            <td><code>rotateOut</code></td>
+                            <td><code>rotateOutDownLeft</code></td>
+                            <td><code>rotateOutDownRight</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>rotateOutUpLeft</code></td>
+                            <td><code>rotateOutUpRight</code></td>
+                            <td><code>hinge</code></td>
+                            <td><code>jackInTheBox</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>rollIn</code></td>
+                            <td><code>rollOut</code></td>
+                            <td><code>zoomIn</code></td>
+                            <td><code>zoomInDown</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>zoomInLeft</code></td>
+                            <td><code>zoomInRight</code></td>
+                            <td><code>zoomInUp</code></td>
+                            <td><code>zoomOut</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>zoomOutDown</code></td>
+                            <td><code>zoomOutLeft</code></td>
+                            <td><code>zoomOutRight</code></td>
+                            <td><code>zoomOutUp</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>slideInDown</code></td>
+                            <td><code>slideInLeft</code></td>
+                            <td><code>slideInRight</code></td>
+                            <td><code>slideInUp</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>slideOutDown</code></td>
+                            <td><code>slideOutLeft</code></td>
+                            <td><code>slideOutRight</code></td>
+                            <td><code>slideOutUp</code></td>
+                            </tr>
+                            <tr>
+                            <td><code>heartBeat</code></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+                            </tbody>
+                            </table>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

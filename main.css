@@ -6,12 +6,16 @@ body {
     link: forestgreen;
 }
 
-.resource-content-list .completed {
-    color: forestgreen;
+.resource-content-list a {
+    text-decoration: none;
 }
 
 .resource-content-list .completed a {
-    text-decoration: none;
+    color: forestgreen;
+}
+
+.resource-content-list .unfinished a {
+    color: rgb(110, 38, 16);
 }
 
 .resource-content-list .completed a:visited {
